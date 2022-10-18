@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css?family=Outfit');   
+:root{
+    --Soft_blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+    --Very_dark_blue_main: hsl(217, 54%, 11%);
+    --Very_dark_blue_card: hsl(216, 50%, 16%);
+    --Very_dark_blue_line: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+    --margin:.8em 0;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    height: 100%;
+    width: 100%;
+}
+body{
+    background-color: var(--Very_dark_blue_main);
+    font-family: Outfit;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.card{
+    position: relative;
+    background-color: var(--Very_dark_blue_card);
+    width: 13em;
+    border-radius: .5em;
+    padding: 1em;
+}
+#img-eq{
+    position: relative;
+    width: 13em;
+    border-radius: .5em;
+    z-index: 1;
+}
+#view{
+    position: absolute;
+    margin: auto;
+    inset: auto 0;
+    background-image: url("images/icon-view.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 3em;
+    background-color: hsla(174, 100%, 50%, 0.501);
+    border-radius: .7em;
+    width: 16em;
+    height: 16.2em;
+}
+h1{
+    font-weight: 600;
+    font-size: 1em;
+    color: var(--White);
+    margin: var(--margin);
+}
+p{
+    font-weight: 300;
+    font-size: .8em;
+    color: var(--Soft_blue);
+    margin: var(--margin);
+}
+span{
+    font-weight: 300;
+    font-size: .8em;
+}
+span:nth-of-type(2){
+    color: var(--Cyan);
+}
+span:nth-of-type(3){
+    color: var(--Soft_blue);
+    margin-left:em;
+}
+.card > img:nth-of-type(2),
+.card > img:nth-of-type(3),
+.card > img:nth-of-type(4){
+    position: relative;
+    top:.1em;
+    margin-right: .1em;
+}
+.card > img:nth-of-type(2){
+    width: .6em;
+    height: .9em;
+}
+.card > img:nth-of-type(3){
+    width: .9em;
+    height: .9em;
+    margin-left: 3.4em;
+}
+hr{
+    margin: var(--margin);
+    border: none;
+    height: .06em;
+    background-color: rgba(128, 128, 128, 0.363);
+}
+.card > img:nth-of-type(4){
+    display: inline;
+    width: 1.8em;
+    height: 1.8em;
+    border: .1em solid white;
+    border-radius: 50%;
+}
+.card > p:nth-last-child(1){
+    display: inline;
+    position: relative;
+    bottom: .8em;
+}
+P > span:nth-of-type(1){
+    font-weight: 400;
+    font-size:.9em;
+    color: white;
+}
+#img-eq:hover{
+    opacity: 30%;
+}
+h1:hover,
+P > span:nth-of-type(1):hover{
+    color: var(--Cyan);
+}
